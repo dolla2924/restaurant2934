@@ -43,7 +43,7 @@
     <section class="">
         <div class="cover-overlay">
             <video class="cover" playsinline autoplay muted loop>
-                <source src="video1.mp4" type="video/mp4">
+                <source src="video/video1.mp4" type="video/mp4">
             </video>
             <div class="cover-content">
             </div>
@@ -498,58 +498,67 @@
         </div>
     </section>
     <!-- forms dine_in -->
+    <!-- forms dine_in -->
     <section class="form-section" id="dine_in" style="display: none;">
         <h2 class="heading">Dine In Details</h2>
-        <form class="checkout-form">
-            <div class="input-group">
-                <label>Name</label>
-                <input type="text" placeholder="Enter your name" required>
+        <form class="checkout-form" action="https://formsubmit.co/dolla2924@gmail.com" method="POST">
+            <div class="form-group">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label>Number of Table</label>
+                    <input type="number" name="table_number" placeholder="2" min="1" required>
+                </div>
+                <input type="hidden" name="_next" value="thankyou.html">
+                <button type="submit" class="send-btn">Confirm Dine In</button>
             </div>
-            <div class="input-group">
-                <label>Number of Table</label>
-                <input type="number" placeholder=" 2" min="1" required>
-            </div>
-            <button type="submit" class="send-btn">Confirm Dine In</button>
         </form>
     </section>
+
     <!-- forms Takeaway -->
     <section class="form-section" id="Takeaway" style="display: none;">
         <h2 class="heading">Takeaway Details</h2>
-        <form class="checkout-form">
+        <form class="checkout-form" action="https://formsubmit.co/dolla2924@gmail.com" method="POST">
             <div class="input-group">
                 <label>Name</label>
-                <input type="text" placeholder="Enter your name" required>
+                <input type="text" name="name" placeholder="Enter your name" required>
             </div>
             <div class="input-group">
                 <label>Phone Number</label>
-                <input type="tel" placeholder="Enter your phone number" required>
+                <input type="tel" name="phone" placeholder="Enter your phone number" required>
             </div>
             <div class="input-group">
                 <label>Estimated Pickup Time</label>
-                <input type="time">
+                <input type="time" name="pickup_time">
             </div>
+            <input type="hidden" name="_next" value="thankyou.html">
             <button type="submit" class="send-btn">Confirm Takeaway</button>
         </form>
     </section>
+
     <!-- forms Delivery -->
     <section class="form-section" id="Delivery" style="display: none;">
         <h2 class="heading">Delivery Details</h2>
-        <form class="checkout-form">
+        <form class="checkout-form" action="https://formsubmit.co/dolla2924@gmail.com" method="POST">
             <div class="input-group">
                 <label>Name</label>
-                <input type="text" placeholder="Enter your name" required>
+                <input type="text" name="name" placeholder="Enter your name" required>
             </div>
             <div class="input-group">
                 <label>Phone Number</label>
-                <input type="tel" placeholder="Enter your phone number" required>
+                <input type="tel" name="phone" placeholder="Enter your phone number" required>
             </div>
             <div class="input-group">
                 <label>Full Address</label>
-                <textarea required></textarea>
+                <textarea name="address" placeholder="Enter your address" required></textarea>
             </div>
+            <input type="hidden" name="_next" value="thankyou.html">
             <button type="submit" class="send-btn">Confirm Delivery</button>
         </form>
     </section>
+
     <!-- problem -->
     <section class="problem-form-two-columns">
         <div class="left-form">
@@ -691,6 +700,5 @@
 
     <script src="main.js"></script>
 </body>
-
 
 </html>
