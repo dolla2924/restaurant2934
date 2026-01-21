@@ -270,3 +270,16 @@ width: 100%;
 }
 }
   
+.login{
+      color:  #143500;
+      background-color:  #99a98f;
+      font-size: 20px;
+      text-decoration: none;
+      border: 1px solid black;
+      padding: 10px 20px;
+      border-radius: 15px;
+      font-weight: 500;
+      transition: .5s;
+}
+
+
